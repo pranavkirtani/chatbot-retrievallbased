@@ -57,12 +57,15 @@ function textToVector(text, dictionary, preventTokenizing) {
 // To-Do: Add a better dataset
 var data = {
     'hello': 'hi, there I am a retrieval based model chatbot written in node.js',
-    'how are you?': 'I am great what about you?',
-    'do you like chicken?': 'I love it',
-     'hows the weather?':'its ver cold out here',
-     'where do you live?':'I live inside the synaptic js',
-     "Have you heard of synaptic.js?":"Yes,I have, its Awesome",
-     "This is my first experience using nueral networks":"Wow, that really awesome to hear"
+    "Good morning, how are you?": "I am doing well, how about you?",
+    'I am also good.': "That's good to hear.",
+     'Hows the weather?':'its ver cold out here',
+     'Where do you live?':'I live inside the synaptic js',
+     "Have you heard of synaptic.js?":"Yes, its Awesome",
+     "This is my first experience using nueral networks":"Wow, that really awesome to hear",
+     "Have you heard the news?":"What good news?",
+     "What is your favorite book?":"I can't read.",
+     "So what's your favorite color?":"blue"
 };
 var texts = [];
 var categories = [];
@@ -109,12 +112,14 @@ console.log(
 // console.log(trainingSet)
 var testingSet = [];
 var test_data = [
-     'where are you?',
      'hello',
      'whats your name',
      "what is synaptic.js",
      'do you like synaptic.js?',
-     'what else do you like?'
+     'where do you stay?',
+     " which color do you like?",
+     "how you feeling?",
+     "have you read the news?"
 ]
 
 for (var i=0;i <test_data.length;i++) {
