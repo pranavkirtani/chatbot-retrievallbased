@@ -50,6 +50,7 @@ function textToVector(text, dictionary, preventTokenizing) {
                 : 1
         );
     }
+    
     return vector;
 }
 
@@ -88,7 +89,8 @@ var categoriesDictionary = arrayToDictonary(categories,'',true);
 // console.log("categoriesDictionary",categoriesDictionary)
 for (var text in data) {
     var category = data[text];
-
+    console.log("text",text," word dic ",wordsDictionary,"textToVector(text, wordsDictionary)",textToVector(text, wordsDictionary))
+    console.log("text",text," word dic ",categoriesDictionary,"textToVector(category, categoriesDictionary,true)",textToVector(category, categoriesDictionary,true))
     trainingSet.push({
         input: textToVector(text, wordsDictionary), 
         output: textToVector(category, categoriesDictionary,true),
@@ -112,7 +114,7 @@ console.log(
 // console.log(trainingSet)
 var testingSet = [];
 var test_data = [
-     'hello',
+     'hi',
      'whats your name',
      "what is synaptic.js",
      'do you like synaptic.js?',
