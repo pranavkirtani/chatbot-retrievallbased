@@ -1,4 +1,4 @@
-# Chatbot implementations using nueral nets in node.js
+# Chatbot implementations using neural nets in node.js
 
 Hello everyone my name is Pranav ,I am a machine learning enthusiast. Below are a few chatbot implementations I developed using nueral networks.I developed them using node.js library called synaptic.js
 
